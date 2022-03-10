@@ -1,60 +1,72 @@
-*{
-    font-family: 'Roboto, sans-serif';
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background-color: beige;
-    height: 100vh;
+body {
+    height: 90vh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+    background: #3494E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#container-btn{
+#contenedor {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    display: none;
+}
+#caja1, #caja2, #caja3 {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 5%;
+    width: 200px;
+    height: 200px;
+}
+
+#caja1 {
+    background-color: rgba(0,0,0,0.767);
+    color:azure;    
+}
+#caja2 {
+    background-color: darkslateblue;
+    color:azure;    
+}
+#caja3 {
+    background-color: #2ab2ea;
+    color:azure;    
+}
+
+#contenedor-btn-v{
     justify-content: center;
     text-align: center;
-}
-
-#container-btn-v{
-  margin-top: 5px;
-  justify-content: center;
-  text-align: center;
-  display: none;
-}
-
-#container{
-    background-color:black;
-    padding: 20px;
+    padding: 1%;
     display: none;
-    font-size: 20px;
 }
 
-#containter > .block{
-    padding: 10px;
-}
-
-.block{
-    color: beige;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.block:first-child{
-    background-color: beige;
-    color: black;
-}
-
-.information-container{
+#contenedor-btn{
+    justify-content: center;
+    text-align: center;
+    padding: 1%;
     display: flex;
 }
-
-.info{
-    margin-left: 5px;
-}
-
-#location{
-    font-weight: bold;
-    font-size: 22px;
+.boton{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
 }
 
 

@@ -1,43 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>TU CLIMA</title>
-    <link href="index.css" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" href="style.css">
 </head>
-<body onload="onLoad()">
-    <div >
-        <div id="container">
-            <div class="block">
-                <div id="location"></div>
-                <div id="date"></div>
-                <div id="description"></div>
-            </div>
-    
-            <div class="block">
-                <div class="information-container">
-                    Temperature
-                    <div class="info" id="temperature"></div>
+<body >
+    <div onload="onLoad()">
+        <div id="contenedor">
+                <div id="caja1">
+                    <h1><div>
+                        Temperatura
+                        <div id="temperature"></div>
+                    </div>
+                    <div id="description"></div></h1>
                 </div>
-                <div class="information-container">
-                    Pressure
-                    <div class="info" id="pressure"></div>
+
+                <div id="caja2">
+                    <h2>
+                    <div>Fecha
+                        <div id="date"></div>
+                    </div>                    
+                    <div id="location"></div></h2>
+                    <img id="iconoAnimado" src="">
                 </div>
-                <div class="information-container">
-                    Humidity
-                    <div class="info" id="humidity"></div>
+
+                <div id="caja3">
+                    <h3>
+                    <div >
+                        Presion
+                        <div id="pressure"></div>
+                    </div>
+                    <div >
+                        Humedad
+                        <div id="humidity"></div>
+                    </div>
+                    </h3>
                 </div>
-            </div>
         </div>
-        <div id="container-btn-v">
-            <a href="index.html">
-                <button>VOLVER</button>
-            </a> 
+        <br>
+        <div id="contenedor-btn-v">
+            <a href="index.html" class="boton">VOLVER</a> 
         </div>
     </div>
 
     <div id="loader" class="loader">Loading...</div>
-    <script src="index.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
